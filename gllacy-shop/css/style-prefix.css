@@ -8,7 +8,9 @@ body {
   font-weight: 700;
   color: #ffffff;
   }
-  
+  @media (min-width: 320px) {
+  html {min-width:120%;}
+}
   a {
   text-decoration: none;
 }
@@ -124,7 +126,7 @@ body.inner-page {
 /* Центровщик */
 
 .container {
-  min-width: 1146px;
+  width: 1146px;
   margin: 0 auto;
 }
 
