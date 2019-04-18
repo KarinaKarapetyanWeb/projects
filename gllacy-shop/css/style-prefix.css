@@ -9,9 +9,6 @@ body {
   color: #ffffff;
   }
 
-  @media (max-width: 828px) {
-  html {min-width:120%;}
-}
   a {
   text-decoration: none;
 }
