@@ -9,6 +9,10 @@ body {
   color: #ffffff;
   }
 
+  @media (min-width: 320px) {
+  html {min-width:120%;}
+}
+
   a {
   text-decoration: none;
 }
