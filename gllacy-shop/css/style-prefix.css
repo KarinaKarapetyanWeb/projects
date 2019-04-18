@@ -7,10 +7,6 @@ body {
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
-  }
-
-  @media (max-width: 320px) {
-  html {min-width:120%;}
 }
 
   a {
@@ -101,6 +97,7 @@ input[type="radio"].visually-hidden {
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  overflow-x: hidden !important;
 }
 
 .site-wrapper::before,
