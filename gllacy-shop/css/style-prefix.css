@@ -9,7 +9,7 @@ body {
   color: #ffffff;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
   html {min-width:120%;}
 }
 
