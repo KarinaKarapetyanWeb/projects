@@ -8,8 +8,8 @@ body {
   font-weight: 700;
   color: #ffffff;
   }
-  @media (max-width: 320px) {
-  html {max-width:120%;}
+  @media (min-width: 320px, max-width:991px) {
+  html {min-width:120%;}
 }
   a {
   text-decoration: none;
