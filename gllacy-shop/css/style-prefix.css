@@ -9,7 +9,7 @@ body {
   color: #ffffff;
   }
   @media (min-width: 320px) {
-  html {min-width:120%;}
+  html {min-width:125%;}
 }
   a {
   text-decoration: none;
