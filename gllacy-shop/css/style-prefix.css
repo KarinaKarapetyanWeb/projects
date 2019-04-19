@@ -97,7 +97,6 @@ input[type="radio"].visually-hidden {
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
-  overflow-x: auto !important;
 }
 
 .site-wrapper::before,
