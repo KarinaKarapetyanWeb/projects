@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная "Cookery box"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="font.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+<div class="popup-fade">
+    <div class="popup">
+        <a class="popup-close" href="#">Закрыть</a>
+        <h3 class="popup-title">Товар добавлен в корзину</h3>
+    </div>
+</div>
+    <div class="main_wrap main_wrap-index">
+       <header class="header">
+
+            <ul class="header__menu header__menu-index">
+                <li class="header__menu-page" data-link="djem">
+                    <a href="#jam-id">Джем</a>
+                </li>
+                <li class="header__menu-page" data-link="set">
+                    <a href="#sets-id">Наборы</a>
+                </li>
+                <li class="header__menu-page">
+                    <a href="#forkitchen-id">Для кухни</a>
+                </li>
+            </ul>
+
+            <div class="header__logo header__logo-index"></div>
+
+            <button class="header__btn-call" type="button" name="button" data-for-modal="send-modal">
+                Позвоните мне
+            </button>
+            <button class="header__btn-opt" type="button" name="button">
+                <a href="cooperation.html">Опт</a>
+            </button>
+
+            <button class="header__btn-basket"></button>
+
+            <div class="header__soc header__soc-index">
+                <a target="_blank" href="https://www.instagram.com/cookerybox/"></a>
+                <a target="_blank" href="https://vk.com/cookerybox"></a>
+            </div>
+
+            <div class="header__menu_mob" data-link="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="header__mobile-menu header__mobile-menu-index mobile-hide" data-menu="mobile">
+                <li><a href="#jam-id">
+                    Джемы
+                </a></li>
+                <li><a href="#sets-id">
+                    Наборы
+                </a></li>
+                <li><a href="#forkitchen-id">
+                    Для кухни
+                </a></li>
+                <li><button class="header__btn-basket_m"></button></li>
+            </ul>
+
+        </header>
+
+    <main>
+
+        <div class="main__content_wrap main__content_wrap-index">
+            <section class="main__content main__content-index">
+                <h1 class="main__title main__title-index">
+                    незабываемый&nbsp;вкус
+                </h1>
+                <p class="main__text main__text-index-coop">
+                    Готовы испытать гастрономическое удовольствие? Джемы от CookeryBox — настоящее торжество вкуса.
+                </p>
+                <div class="main__price main__price-index">
+                    <button type="button" name="button" data-for-modal="send-modal" class="main__price__index">
+                        попробовать
+                    </button>
+                </div>
+            </section>
+         </div>
+
+        
+        <div class="line-index">
+            <img src="img/main-index-line1bd1b0b86c790f2bc084001a1488f7c7.svg" alt="">
+        </div>
+        <div class="line-2">
+            <img src="img/main-line2-m637a21a58e508f0d7a05cc5ca98183a2.png" alt="">
+        </div>
+    </div>
+   
+    <div class="catalog_wrap">
+
+        <section class="catalog catalog-index">
+            <div class="catalog__title catalog__title-deserts" id="jam-id">
+                <h2>
+                    джем-десерты
+                </h2>
+            </div>
+            <ul class="catalog__list catalog__list-deserts">
+            <li class="catalog__list__item product-1">
+                <p class="product__name">
+                    <a href="product-cherry.html">
+                        пряная вишня
+                        <p class="product__image">
+                        <img src="img/product-cherrye599503c6b126a8e4d6099031fdd1b93.png" width="300" height="300" alt="Фотография джема"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">180 РУБ.</p>
+                    <p class="product__info-weight">Масса нетто: 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(1);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-2">
+                <p class="product__name">
+                    <a href="product-strawberry.html">
+                        клубника и ваниль
+                        <p class="product__image">
+                        <img src="img/product-strawberry5708d47862ccc239ebdb25cba6308d63.png" width="300" height="300" alt="Фотография джема"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">180 РУБ.</p>
+                    <p class="product__info-weight">Масса нетто: 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(2);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-3">
+                <p class="product__name">
+                    <a href="product-mint.html">
+                        киви и мята
+                        <p class="product__image">
+                        <img src="img/product-mintf78eeda09daf44d9992511af89161d60.png" width="300" height="300" alt="Фотография джема"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">180 РУБ.</p>
+                    <p class="product__info-weight">Масса нетто: 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(3);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-4">
+                <p class="product__name">
+                    <a href="product-orange.html">
+                        банан и апельсин
+                        <p class="product__image">
+                        <img src="img/product-orange20cc728c31019daf05e566f66d2cc0fc.png" width="300" height="300" alt="Фотография джема"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">180 РУБ.</p>
+                    <p class="product__info-weight">Масса нетто: 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(4);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product product-5">
+                <p class="product__name">
+                    <a href="product-apple.html">
+                        яблочный штрудель
+                        <p class="product__image">
+                        <img src="img/product-apple14511f05d1157291eb08460aab18d102.png" width="300" height="300" alt="Фотография джема"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">180 РУБ.</p>
+                    <p class="product__info-weight">Масса нетто: 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(5);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product product-6">
+                <p class="product__name">
+                    <a href="product-plum.html">
+                        слива в шоколаде
+                        <p class="product__image">
+                        <img src="img/product-plumf50f604a2f2714eab7e572260ae8868b.png" width="300" height="300" alt="Фотография джема"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">180 РУБ.</p>
+                    <p class="product__info-weight">Масса нетто: 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button  onclick="addToCart(6);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+        </ul>
+        </section>
+            
+    </div>
+
+    
+
+<div class="recipe_wrap-index">
+        <div class="combine__line-index"></div>
+        <section class="combine">
+            <h2>
+                К чему подходит
+            </h2>
+
+            <div class="combine__list">
+                <div class="combine__list-item_wrap">
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb10fd65365c567ea3c548c4eb5c4118b03.png" alt="">
+                        </div>
+                        <p>
+                            Слопать <br /> просто так
+                        </p>
+                    </div>
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb20097f2086ad204e03c645c112f1069bc.png" alt="">
+                        </div>
+                        <p>
+                            Добавить <br /> в чай
+                        </p>
+                    </div>
+                </div>
+
+                <div class="combine__list-item_wrap">
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb32d178ce80735e2051b563b568c62f814.png" alt="">
+                        </div>
+                        <p>
+                            К тостам и <br /> оладьям
+                        </p>
+                    </div>
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb4e057f4b54f8676b2b5eb6a13cee25348.png" alt="">
+                        </div>
+                        <p>
+                            В кашу <br /> и творог
+                        </p>
+                    </div>
+                </div>
+
+                <div class="combine__list-item_wrap">
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb5ed3ae3441bc9b2c560de9ae274a11344.png" alt="">
+                        </div>
+                        <p>
+                            К мясу или <br /> птице
+                        </p>
+                    </div>
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb6efbb8a77dd1c272236ff04fd56dc6e66.png" alt="">
+                        </div>
+                        <p>
+                            К сыру
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <section class="catalog_wrap catalog_wrap-sets">
+
+        <div class="catalog">
+            <div class="catalog__title catalog__title-sets" id="sets-id">
+                <h2>
+                    подарочные наборы
+                </h2>
+            </div>
+        </div>
+            <ul class="catalog__list catalog__list-space catalog__list-sets">
+            <li class="catalog__list__item product-1">
+                <p class="product__name">
+                    <a href="sets-1.html">
+                        3 джема + 2 чая 
+                        <p class="product__image">
+                        <img src="img/set-17d6d5d92536b4bce5582480273f3e3b4.png" width="300" height="300" alt="Фотография набора"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">480 РУБ.</p>
+                    <p class="product__info-weight">Два джема по 200 г. + двая чая по 50 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(7);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-2">
+                <p class="product__name">
+                    <a href="sets-2.html">
+                        джем в подарок
+                        <p class="product__image">
+                        <img src="img/set-2f31ba8f1b6098382fb779ae50469cbbb.png" width="300" height="300" alt="Фотография набора"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">200 РУБ.</p>
+                    <p class="product__info-weight">Джем в отдельной упаковке</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(8);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-3">
+                <p class="product__name">
+                    <a href="sets-3.html">
+                        3 джема
+                        <p class="product__image">
+                        <img src="img/set-33127482524e6ed8ebe5a04ffd2dbce33.png" width="300" height="300" alt="Фотография набора"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">360 РУБ.</p>
+                    <p class="product__info-weight">3 джема по 200 г.</p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(9);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+        </ul>
+        
+    </section>
+
+    <section class="description description__index-page description__index-line description__index-margin">
+        <h2>
+            почему джем <span class="description__index-dash"></span> лучший подарок?
+        </h2>
+        <p>
+            Вишневый джем с пряностями — лучший способ пережить любую непогоду. Чтобы сделать вечер приятным и теплым, просто возьмите мягкий плед, хорошую книгу и добавьте к чаю ложечку сладкого и ароматного домашнего джема, сваренного специально, чтобы подарить вам уют и поднять настроение.
+        </p>
+    </section>
+    <div class="description__line_wrap">
+        <div class="description__line"></div>
+    </div>
+
+    <div class="kitchen-delivery-wrap">
+
+        <section class="catalog">
+            <div class="catalog__title catalog__title-kitchen" id="forkitchen-id">
+                <h2>
+                    для кухни
+                </h2>
+            </div>
+            <ul class="catalog__list catalog__list-kitchen catalog__list-space">
+            <li class="catalog__list__item product-1">
+                <p class="product__name">
+                    <a href="forkitchen-1.html">
+                        набор открыток
+                        <p class="product__image">
+                        <img src="img/for-kitchen-106736e983b86ab3307d714a9a0de451b.png" width="300" height="300" alt="Фотография товара"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">100 РУБ.</p>
+                    <p class="product__info-weight">3 открытки 6&#215;3 см. </p>
+                    </div>
+                    <p class="product__basket"><button onclick="addToCart(10);"><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-2">
+                <p class="product__name">
+                    <a href="forkitchen-2.html">
+                        льняной фартук
+                        <p class="product__image">
+                        <img src="img/for-kitchen-294744359868d414f1df032b716b87ab9.png" width="300" height="300" alt="Фотография товара"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">1600 РУБ.</p>
+                    <p class="product__info-weight">Фартук с надписью</p>
+                    </div>
+                    <p class="product__basket"><button><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+            <li class="catalog__list__item product-3">
+                <p class="product__name">
+                    <a href="forkitchen-3.html">
+                        кружка с рисунком
+                        <p class="product__image">
+                        <img src="img/for-kitchen-3b9577aad703b6404e50cc3340acb0f35.png" width="300" height="300" alt="Фотография товара"/>
+                        </p>
+                    </a>
+                </p>
+                
+                <div class="product__info">
+                    <div class="product__info-wrapper">
+                    <p class="product__info-price">250 РУБ.</p>
+                    <p class="product__info-weight">Не лентяйка, а<br/> королева дивана</p>
+                    </div>
+                    <p class="product__basket"><button><span class="visually-hidden">Корзина</span></button></p>
+                </div>
+            </li>
+        </ul>
+        </section>
+    
+    <div class="delivery-wrap">
+    <section class="delivery">
+        <h2>доставка от 1 банки в любой регион РФ<span>!</span></h2>
+        <div class="delivery__img"><img src="img/delivery-car8dec0502c880c35d7861109b1b12962d.png" alt="Фотография машины" width="1024" height="360" /></div>
+        <ul class="delivery__companies">
+            <li class="delivery__companies__item-1"><img src="img/delivery-1b7529bd9fb5159ca4621659ebbe4a92e.png" width="133" height="50" alt="пэк"/></li>
+            <li class="delivery__companies__item-2"><img src="img/delivery-24ca49039f8b7f2a60f681a13ec80e82d.png" width="171" height="50" alt="сдэк"/></li>
+            <li class="delivery__companies__item-3"><img src="img/delivery-3ff7238565ad6f7dd186dc1d8f0f0a0cd.png" width="300" height="50" alt="байкал сервис"/></li>
+            <li class="delivery__companies__item-4"><img src="img/delivery-4f39a8eec996ef5cd09867e1d8d76196e.png" width="300" height="50" alt="деловые линии"/></li>
+        </ul>
+        <div class="delivery__detail">
+            <div class="delivery__detail__item">
+                <p class="delivery__detail__item-1">Доставка до терминала</p>
+                <p class="delivery__detail__item-2">бесплатно</p>
+            </div>
+            <div class="delivery__detail__item">
+                <p class="delivery__detail__item-1">Отгрузка заказа после оплаты</p>
+                <p class="delivery__detail__item-2">на следующий день</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </main>
+
+    <div class="other">
+        <h2>
+            Другие товары
+        </h2>
+        <div class="other__slider">
+
+            <!-- slide-1 -->
+            <div class="other__slide other-slide_active" data-slide="other-slide">
+                <div class="other__slide-1">
+                    <p>
+                        <a href="product-plum.html"> слива в шоколаде </a>
+                    </p>
+                </div>
+                <div class="other__slide_wrap">
+                    <div class="other__slide-2">
+                        <p>
+                            <a href="product-orange.html">банан и апельсин</a>
+                        </p>
+                    </div>
+                    <div class="other__slide-3">
+                        <p>
+                            <a href="product-strawberry.html">клубника и ваниль</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="other__slide-4">
+                    <p>
+                        <a href="product-mint.html">киви и мята</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--slide 2-->
+            <div class="other__slide other-slide" data-slide="other-slide">
+                <div class="other__slide-5">
+                    <p>
+                        <a href="product-apple.html">яблочный штрудель</a>
+                    </p>
+                </div>
+                <div class="other__slide_wrap">
+                    <div class="other__slide-6">
+                        <p>
+                            <a href="product-cherry.html">пряная вишня</a>
+                        </p>
+                    </div>
+                    <div class="other__slide-7">
+                        <p>
+                            <a href="product-orange.html">банан и апельсин</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="other__slide-8">
+                    <p>
+                        <a href="sets-3.html">3 джема</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="other__slider-nav">
+                <button class="other__slider-left other__slider-left__index" data-btn-left="other-prev"></button>
+                <button class="other__slider-right other__slider-right__index" data-btn-right="other-next"></button>
+            </div>
+         
+        </div>
+    
+    <footer class="footer">
+            <p>
+                <a href="cooperation.html">Сотрудничество</a>
+            </p>
+            <button type="button" name="button" data-for-modal="send-modal" class="footer__index">
+                Позвоните мне
+            </button>
+            <div class="footer__soc">
+                <a target="_blank" href="https://www.instagram.com/cookerybox/"></a>
+                <a target="_blank" href="https://vk.com/cookerybox"></a>
+            </div>
+    </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="send-modal_wrapper" data-modal="send-modal">
+    </div>
+    <div class="send-modal" data-modal-window="send-modal">
+        <span class="send-modal__close" data-modal="send-modal"></span>
+        <div class="modal">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-name">
+                    Имя
+                </label>
+                <input type="text" id="user-name"  name="name"/>
+                <label for="user-tel"> 
+                    Телефон
+                </label>
+                <input type="tel" id="user-tel"  name="tel"/>
+                <label for="user-mail">
+                    E-mail
+                </label>
+                <input type="e-mail" id="user-mail" name="e-mail"/>
+                <label class="checkbox">
+                    <input type="checkbox"/>
+                    <span></span>
+                    Даю согласие на обработку персональных данных
+                </label>
+                <button type="submit" data-modal="send-modal" class="modal__button__index">
+                    Оставить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+</body>
+</script>
+
+</html>
