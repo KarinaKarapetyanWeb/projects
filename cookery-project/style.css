@@ -863,7 +863,7 @@ button {
   @media only screen and (min-width: 1540px) {
     .main_wrap {
       height: 100vh;
-      background-size: contain;
+      
     }
   }
 
