@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Джем</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="font.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+<div class="popup-fade">
+    <div class="popup">
+        <a class="popup-close" href="#">Закрыть</a>
+        <h3 class="popup-title">Товар добавлен в корзину</h3>
+    </div>
+</div>
+    <div class="main_wrap main_wrap_orange">
+
+        <header class="header">
+
+            <ul class="header__menu">
+                <li class="header__menu-djem header__menu-djem__orange" data-link="djem">
+                    <a>Джем</a>
+                    <ul class="drop-menu drop-menu-orange djem-hide" data-menu="djem">
+                        <li><a>
+                            Низкокалорийный
+                        </a></li>
+                        <li><a>
+                            С алкоголем
+                        </a></li>
+                        <li><a>
+                            Без сахара
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="header__menu-sets header__menu-sets__orange" data-link="set">
+                    <a>Наборы</a>
+                    <ul class="drop-menu drop-menu-orange set-hide" data-menu="set">
+                        <li><a>
+                            Джем-десерты
+                        </a></li>
+                        <li><a>
+                            Джемы с алкоголем
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="header__menu-coop header__menu-coop__orange">
+                    <a href="cooperation.html">Сотрудничество</a>
+                </li>
+            </ul>
+
+            <a href="index.html"><div class="header__logo"></div></a>
+
+            <button class="header__btn-call header__btn-call__orange" type="button" name="button" data-for-modal="send-modal">
+                Позвоните мне
+            </button>
+            <button class="header__btn-opt header__btn-opt__orange" type="button" name="button">
+                <a href="cooperation.html">Опт</a>
+            </button>
+
+            <button class="header__btn-basket"></button>
+
+            <div class="header__soc">
+                <a target="_blank" href="https://www.instagram.com/cookerybox/"></a>
+                <a target="_blank" href="https://vk.com/cookerybox"></a>
+            </div>
+
+            <div class="header__menu_mob" data-link="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="header__mobile-menu header__mobile-menu__orange mobile-hide" data-menu="mobile">
+                <a class="header__mobile-menu__djem" data-link="mobile-2">
+                    Джемы
+                </a>
+                <ul class="header__mobile-menu__level2 mobile-2-hide" data-menu="mobile-2">
+                    <a>
+                        Низкокалорийный
+                    </a>
+                    <a>
+                        С алкоголем
+                    </a>
+                    <a>
+                        Без сахара
+                    </a>
+                </ul>
+                <a class="header__mobile-menu__djem" data-link="mobile-3">
+                    Наборы
+                </a>
+                <ul class="header__mobile-menu__level2 mobile-3-hide" data-menu="mobile-3">
+                    <a>
+                        Джем-десерты
+                    </a>
+                    <a>
+                        Джемы с алкоголем
+                    </a>
+                </ul>
+                <a href="cooperation.html">
+                    Сотрудничество
+                </a>
+                <button class="header__btn-basket_m"></button>
+            </ul>
+        </header>
+    <main>
+        <div class="main__content_wrap main__content_wrap-index">
+            <section class="main__content main__content-index">
+                <h1 class="main__title main__title-index">
+                    банан&nbsp;и&nbsp;апельсин
+                </h1>
+                <p class="main__text">
+                    Каков на вкус домашний уют зимним вечером?
+                    Это вкус джема “Пряная вишня”. В этом десерте
+                    собраны самые согревающие специи, прекрасно
+                </p>
+                <div class="main__price">
+                    <p>
+                        180 ₽
+                    </p>
+                    <button  onclick="addToCart(4);" type="button" name="button" class="main__price__orange">
+                        купить
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="line">
+            <img src="img/mainline455c966f916c9b8cd062c69a3d1d3791.png" alt="">
+        </div>
+        <div class="line-2">
+            <img src="img/main-line2-m637a21a58e508f0d7a05cc5ca98183a2.png" alt="">
+        </div>
+    </div>
+
+    <div class="composition_wrap">
+        <section class="composition">
+            <div class="composition__title composition__title__orange">
+                <h2>
+                    Состав и калорийность
+                </h2>
+            </div>
+            <div class="composition__slider">
+
+                <!-- slide-1 -->
+                <div class="composition__slider-slide slide">
+                    <div class="slide__content">
+                        <p class="slide__content-text_bold">
+                            Cостав продукта:
+                        </p>
+                        <p class="slide__content-text">
+                            Вишня свежая, сахар, корица, бадьян, гвоздика, черный перец.
+                        </p>
+                        <p class="slide__content-text_bold">
+                            Пищевая ценность:
+                        </p>
+                        <table class="slide__content-table">
+                            <tr>
+                                <td>
+                                    Жиры
+                                </td>
+                                <td>
+                                    0,4 г.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Белки
+                                </td>
+                                <td>
+                                    0,8 г.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Углеводы
+                                </td>
+                                <td>
+                                    54 г.
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="slide__content-text_bold">
+                            Энергетическая ценность:
+                        </p>
+                        <p class="slide__content-text">
+                            Ккал (кДж): 212 (887)
+                        </p>
+                        <button onclick="addToCart(4);" class="slide__content-btn slide__content-btn__orange" type="button" name="button">
+                            купить этот джем
+                        </button>
+                    </div>
+                    <div class="slide__img  comp-slide_active" data-slide="comp-slide">
+                        <img src="img/slide1bae5fbff4fcb72bafdd634de9018c192.png" alt="djem">
+                    </div>
+                    <div class="slide__img comp-slide" data-slide="comp-slide">
+                        <img src="img/slide2084a5e1ae37662ce8ae74dd3db49eb62.jpg" alt="djem">
+                    </div>
+                    <div class="slide__img comp-slide" data-slide="comp-slide">
+                        <img src="img/slide3ab25c49445e5e14c2981398c90642c49.jpg" alt="djem">
+                    </div>
+                </div>
+
+                <div class="composition__slider-nav">
+                    <button class="composition__slider-left composition__slider-left__orange" data-btn-left="comp-prev"></button>
+                    <button class="composition__slider-right composition__slider-right__orange" data-btn-right="comp-next"></button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="comp__line2_wrap">
+        <div class="comp__line2"></div>
+    </div>
+    <section class="description description__jam description__orange">
+        <h2>
+            Описание джема
+        </h2>
+        <p>
+            Вишневый джем с пряностями — лучший способ пережить любую непогоду. Чтобы сделать вечер приятным и теплым,
+            просто возьмите мягкий плед, хорошую книгу и добавьте к чаю ложечку сладкого и ароматного домашнего джема,
+            сваренного специально, чтобы подарить вам уют и поднять настроение.
+        </p>
+    </section>
+    <div class="description__line_wrap">
+        <div class="description__line description__line__jam"></div>
+    </div>
+    <div class="combine-recipe_wrap">
+        <div class="combine__line"></div>
+        <section class="combine">
+            <h2>
+                К чему подходит
+            </h2>
+
+            <div class="combine__list">
+                <div class="combine__list-item_wrap">
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb10fd65365c567ea3c548c4eb5c4118b03.png" alt="">
+                        </div>
+                        <p>
+                            Слопать <br /> просто так
+                        </p>
+                    </div>
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb20097f2086ad204e03c645c112f1069bc.png" alt="">
+                        </div>
+                        <p>
+                            Добавить <br /> в чай
+                        </p>
+                    </div>
+                </div>
+
+                <div class="combine__list-item_wrap">
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb32d178ce80735e2051b563b568c62f814.png" alt="">
+                        </div>
+                        <p>
+                            К тостам и <br /> оладьям
+                        </p>
+                    </div>
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb4e057f4b54f8676b2b5eb6a13cee25348.png" alt="">
+                        </div>
+                        <p>
+                            В кашу <br /> и творог
+                        </p>
+                    </div>
+                </div>
+
+                <div class="combine__list-item_wrap">
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb5ed3ae3441bc9b2c560de9ae274a11344.png" alt="">
+                        </div>
+                        <p>
+                            К мясу или <br /> птице
+                        </p>
+                    </div>
+                    <div class="combine__list-item">
+                        <div class="combine__list-img">
+                            <img src="img/comb6efbb8a77dd1c272236ff04fd56dc6e66.png" alt="">
+                        </div>
+                        <p>
+                            К сыру
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="recipe">
+            <h2 class="recipe__orange">
+                Рецепты
+            </h2>
+            <div class="recipe__slider recipe__slider__orange">
+
+                <!-- slide-1 -->
+                <div class="recipe__slide recipe-slide_active" data-slide="recipe-slide">
+                    <button class="recipe__slide-icon"></button>
+                    <div class="recipe__slide-img">
+                        <img src="img/recipe-slide1b5c9661216758b4225e2d83a8fc8c32f.png" alt="recipe">
+                    </div>
+                    <div class="recipe__slide-content">
+                        <p>
+                            Оладушки
+                        </p>
+                        <ul>
+                            Ингредиенты:
+                            <li>
+                                Кефир или простокваша — 250 Мл
+                            </li>
+                            <li>
+                                Вода — 40 Миллилитров Яйца — 1 ш
+                            </li>
+                            <li>
+                                Сахар — 3 Ст. ложки Соль — 1/2 чл
+                            </li>
+                            <li>
+                                Сода — 1/2 чл
+                            </li>
+                            <li>
+                                Мука — 230 Грамм 
+                        </ul>
+                        <ul>
+                            Приготовление:
+                            <li>
+                                Взбиваем яйцо с солью, сахаром и водой.
+                            </li>
+                            <li>
+                                Взбиваем яйцо с солью, сахаром и водой.
+                            </li>
+                            <li>
+                                Взбиваем яйцо с солью, сахаром и водой.
+                            </li>
+                            <li>
+                                Взбиваем яйцо с солью, сахаром и водой.
+                            </li>
+                            <li>
+                                Взбиваем яйцо с солью, сахаром и водой.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- slide-2 -->
+                <div class="recipe__slide recipe-slide" data-slide="recipe-slide">
+                    <button class="recipe__slide-icon"></button>
+                    <div class="recipe__slide-img">
+                        <img src="img/slide2084a5e1ae37662ce8ae74dd3db49eb62.jpg" alt="recipe">
+                    </div>
+                    <div class="recipe__slide-content">
+                        <p>
+                            Пирог с джемом 
+                        </p>
+                        <ul>
+                            Ингредиенты:
+                            <li>
+                                Сливочное масло: 200 г. 
+                            </li>
+                            <li>
+                                Мука: 300 г. 
+                            </li>
+                            <li>
+                                Сахар: 100 г. 
+                            </li>
+                            <li>
+                                Разрыхлитель для теста
+                            </li>
+                            <li>
+                                Соль, специи. 
+                            </li>
+                        </ul>
+                        <ul>
+                            Приготовление:
+                            <li>
+                                Приготовьте тесто. 
+                            </li>
+                            <li>
+                                Раскатайте тесто толщиной 2 мм. 
+                            </li>
+                            <li>
+                                Смажьте форму маслом. 
+                            </li>
+                            <li>
+                                Положите тесто в форму. 
+                            </li>
+                            <li>
+                                Намажьте джемом, запекайте при 200 градусах. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="recipe__slider-nav">
+                <button class="recipe__slider-left recipe__slider-left__orange" data-btn-left="recipe-prev"></button>
+                <button class="recipe__slider-right recipe__slider-right__orange" data-btn-right="recipe-next"></button>
+            </div>
+
+        </section>
+    </div>
+    <div class="recipe__line_wrap">
+        <div class="recipe__line"></div>
+    </div>
+    </main>
+
+    <div class="other">
+        <h2>
+            Другие товары
+        </h2>
+        <div class="other__slider">
+
+            <!-- slide-1 -->
+            <div class="other__slide other-slide_active" data-slide="other-slide">
+                <div class="other__slide-1">
+                    <p>
+                        <a href="product-plum.html"> слива в шоколаде </a>
+                    </p>
+                </div>
+                <div class="other__slide_wrap">
+                    <div class="other__slide-2">
+                        <p>
+                            <a href="product-orange.html">банан и апельсин</a>
+                        </p>
+                    </div>
+                    <div class="other__slide-3">
+                        <p>
+                            <a href="product-strawberry.html">клубника и ваниль</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="other__slide-4">
+                    <p>
+                        <a href="product-mint.html">киви и мята</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--slide 2-->
+            <div class="other__slide other-slide" data-slide="other-slide">
+                <div class="other__slide-5">
+                    <p>
+                        <a href="product-apple.html">яблочный штрудель</a>
+                    </p>
+                </div>
+                <div class="other__slide_wrap">
+                    <div class="other__slide-6">
+                        <p>
+                            <a href="product-cherry.html">пряная вишня</a>
+                        </p>
+                    </div>
+                    <div class="other__slide-7">
+                        <p>
+                            <a href="product-orange.html">банан и апельсин</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="other__slide-8">
+                    <p>
+                        <a href="sets-3.html">3 джема</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="other__slider-nav">
+                <button class="other__slider-left other__slider-left__orange" data-btn-left="other-prev"></button>
+                <button class="other__slider-right other__slider-right__orange" data-btn-right="other-next"></button>
+            </div>
+         
+        </div>
+    
+
+        <footer class="footer">
+            <p>
+                <a href="cooperation.html">Сотрудничество</a>
+            </p>
+            <button type="button" name="button" data-for-modal="send-modal" class="footer__orange">
+                Позвоните мне
+            </button>
+            <div class="footer__soc">
+                <a target="_blank" href="https://www.instagram.com/cookerybox/"></a>
+                <a target="_blank" href="https://vk.com/cookerybox"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="send-modal_wrapper" data-modal="send-modal">
+    </div>
+    <div class="send-modal" data-modal-window="send-modal">
+        <span class="send-modal__close" data-modal="send-modal"></span>
+        <div class="modal">
+             <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-name">
+                    Имя
+                </label>
+                <input type="text" id="user-name"  name="name"/>
+                <label for="user-tel"> 
+                    Телефон
+                </label>
+                <input type="tel" id="user-tel"  name="tel"/>
+                <label for="user-mail">
+                    E-mail
+                </label>
+                <input type="e-mail" id="user-mail" name="e-mail"/>
+                <label class="checkbox">
+                    <input type="checkbox"/>
+                    <span></span>
+                    Даю согласие на обработку персональных данных
+                </label>
+                <button type="submit" data-modal="send-modal" class="modal__button__orange">
+                    Оставить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+</body>
+</script>
+
+</html>

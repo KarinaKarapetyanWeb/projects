@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Наборы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="font.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+<div class="popup-fade">
+    <div class="popup">
+        <a class="popup-close" href="#">Закрыть</a>
+        <h3 class="popup-title">Товар добавлен в корзину</h3>
+    </div>
+</div>
+    <div class="main_wrap main_wrap-index">
+
+         <header class="header">
+
+            <ul class="header__menu header__menu-index">
+                <li class="header__menu-page" data-link="djem">
+                    <a href="index.html#jam-id">Джем</a>
+                </li>
+                <li class="header__menu-page" data-link="set">
+                    <a href="index.html#sets-id">Наборы</a>
+                </li>
+                <li class="header__menu-page">
+                    <a href="index.html#forkitchen-id">Для кухни</a>
+                </li>
+            </ul>
+
+            <a href="index.html"><div class="header__logo header__logo-coop"></div></a>
+
+            <button class="header__btn-call" type="button" name="button" data-for-modal="send-modal">
+                Позвоните мне
+            </button>
+            <button class="header__btn-opt" type="button" name="button">
+                <a href="cooperation.html">Опт</a>
+            </button>
+
+            <button class="header__btn-basket"></button>
+
+            <div class="header__soc header__soc-index">
+                <a target="_blank" href="https://www.instagram.com/cookerybox/"></a>
+                <a target="_blank" href="https://vk.com/cookerybox"></a>
+            </div>
+
+            <div class="header__menu_mob" data-link="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+             <ul class="header__mobile-menu header__mobile-menu-index mobile-hide" data-menu="mobile">
+                 <li><a href="index.html#jam-id">
+                    Джемы
+                </a></li>
+                <li><a href="index.html#sets-id">
+                    Наборы
+                </a></li>
+                <li><a href="index.html#forkitchen-id">
+                    Для кухни
+                </a></li>
+                <li><button class="header__btn-basket_m"></button></li>
+            </ul>
+        </header>
+    <main>
+        <div class="main__content_wrap">
+            <section class="main__content main__content-index">
+                <h1 class="main__title">
+                    3 джема
+                </h1>
+                <p class="main__text">
+                    Ищете идеальный подарок для сладкоежки? Лучший вариант презента — коробка от CookeryBox с чаем и джемом. 
+                </p>
+                <div class="main__price">
+                    <p>
+                        500 ₽
+                    </p>
+                    <button  onclick="addToCart(13);" type="button" name="button" class="main__price__index">
+                        купить
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="line">
+            <img src="img/mainline455c966f916c9b8cd062c69a3d1d3791.png" alt="">
+        </div>
+        <div class="line-2">
+            <img src="img/main-line2-m637a21a58e508f0d7a05cc5ca98183a2.png" alt="">
+        </div>
+        <div class="spoon"></div>
+    </div>
+
+    <div class="composition_wrap composition_wrap-set">
+        <section class="composition">
+            <div class="composition__title">
+                <h2 class="composition__title-space">
+                    Характеристики
+                </h2>
+            </div>
+            <div class="composition__slider">
+
+             
+                <div class="composition__slider-slide slide">
+                    <div class="slide__content slide__content-sets">
+
+                       <p class="slide__content-text_bold">Что внутри подарка</p>
+                       <ul class="slide__content-text">
+                           <li>- чай в подарочном пакете (50 г);</li>
+                           <li>- четыре банки джема (по 200 г). </li>
+                       </ul>
+                       <p class="slide__content-text">Размер коробки: 27х15х10 см. Вес коробки: 2 кг.</p><br/>
+                       <p class="slide__content-text slide__content-text-last">Вы можете самостоятельно выбрать вкус джема, который хотите.<br> В подарок положим душевную открытку.</p>
+
+                        <button  onclick="addToCart(13);" class="slide__content-btn slide__content-btn-sets slide__content-btn__index" type="button" name="button">
+                            купить 
+                        </button>
+                    </div>
+                    <div class="slide__img  comp-slide" data-slide="comp-slide">
+                        <img src="img/slide1bae5fbff4fcb72bafdd634de9018c192.png" alt="djem">
+                    </div>
+                    <div class="slide__img comp-slide_active" data-slide="comp-slide">
+                        <img src="img/slide2084a5e1ae37662ce8ae74dd3db49eb62.jpg" alt="djem">
+                    </div>
+                    <div class="slide__img comp-slide" data-slide="comp-slide">
+                        <img src="img/slide3ab25c49445e5e14c2981398c90642c49.jpg" alt="djem">
+                    </div>
+                </div>
+
+                <div class="composition__slider-nav">
+                    <button class="composition__slider-left composition__slider-left__index" data-btn-left="comp-prev"></button>
+                    <button class="composition__slider-right composition__slider-right__index" data-btn-right="comp-next"></button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="comp__line2_wrap">
+        <div class="comp__line2 comp__line2-space-2"></div>
+    </div>
+    <section class="description description__sets">
+        <h2>
+            Описание 
+        </h2>
+        <p>
+            Подарочный набор от CookeryBox — идеальный вариант поблагодарить человека или выразить свою симпатию. Дарите разнообразие: в наборе 50 граммов отборного листового чая и четыре банки джема, вкус которых вы можете выбрать самостоятельно. А бонусом — открытка с теплыми словами.
+        </p>
+    </section>
+    <div class="description__line_wrap">
+        <div class="description__line description__line__sets"></div>
+    </div>
+    </main>
+
+    <div class="other">
+        <h2>
+            Другие товары
+        </h2>
+        <div class="other__slider">
+
+            <!-- slide-1 -->
+            <div class="other__slide other-slide_active" data-slide="other-slide">
+                <div class="other__slide-1">
+                    <p>
+                        <a href="product-plum.html"> слива в шоколаде </a>
+                    </p>
+                </div>
+                <div class="other__slide_wrap">
+                    <div class="other__slide-2">
+                        <p>
+                            <a href="product-orange.html">банан и апельсин</a>
+                        </p>
+                    </div>
+                    <div class="other__slide-3">
+                        <p>
+                            <a href="product-strawberry.html">клубника и ваниль</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="other__slide-4">
+                    <p>
+                        <a href="product-mint.html">киви и мята</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--slide 2-->
+            <div class="other__slide other-slide" data-slide="other-slide">
+                <div class="other__slide-5">
+                    <p>
+                        <a href="product-apple.html">яблочный штрудель</a>
+                    </p>
+                </div>
+                <div class="other__slide_wrap">
+                    <div class="other__slide-6">
+                        <p>
+                            <a href="product-cherry.html">пряная вишня</a>
+                        </p>
+                    </div>
+                    <div class="other__slide-7">
+                        <p>
+                            <a href="product-orange.html">банан и апельсин</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="other__slide-8">
+                    <p>
+                        <a>3 джема</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="other__slider-nav">
+                <button class="other__slider-left other__slider-left__index" data-btn-left="other-prev"></button>
+                <button class="other__slider-right other__slider-right__index" data-btn-right="other-next"></button>
+            </div>
+         
+        </div>
+    
+
+        <footer class="footer">
+            <p>
+                <a href="cooperation.html">Сотрудничество</a>
+            </p>
+            <button type="button" name="button" data-for-modal="send-modal" class="footer__index">
+                Позвоните мне
+            </button>
+            <div class="footer__soc">
+                <a target="_blank" href="https://www.instagram.com/cookerybox/"></a>
+                <a target="_blank" href="https://vk.com/cookerybox"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="send-modal_wrapper" data-modal="send-modal">
+    </div>
+    <div class="send-modal" data-modal-window="send-modal">
+        <span class="send-modal__close" data-modal="send-modal"></span>
+        <div class="modal">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-name">
+                    Имя
+                </label>
+                <input type="text" id="user-name"  name="name"/>
+                <label for="user-tel"> 
+                    Телефон
+                </label>
+                <input type="tel" id="user-tel"  name="tel"/>
+                <label for="user-mail">
+                    E-mail
+                </label>
+                <input type="e-mail" id="user-mail" name="e-mail"/>
+                <label class="checkbox">
+                    <input type="checkbox"/>
+                    <span></span>
+                    Даю согласие на обработку персональных данных
+                </label>
+                <button type="submit" data-modal="send-modal" class="modal__button__index">
+                    Оставить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+</body>
+</script>
+
+</html>
