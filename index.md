@@ -1,9 +1,9 @@
 <meta name='freelancehunt' content='4784a3120edd0e7' />
-<h1>Верстка сайтов/Frontend разработка</h1>
-<ul style="display:flex;width:500px;margin:0 auto;justify-content:space-between;">
-  <li style="padding:10px; border:1px solid blue;">HTML5</li>
-  <li style="padding:10px; border:1px solid blue;">CSS3/SCSS/LESS</li>
-  <li style="padding:10px; border:1px solid blue;">JS/GULP</li>
+<h1 style="text-align:center">Верстка сайтов/Frontend разработка</h1>
+<ul style="list-style:none;display:flex;width:500px;margin:0 auto;justify-content:space-between;flex-wrap:wrap;font-weight:bold;">
+  <li style="padding:10px; border:1px solid green;">HTML5</li>
+  <li style="padding:10px; border:1px solid green;">CSS3/SCSS/LESS</li>
+  <li style="padding:10px; border:1px solid green;">JS/GULP</li>
 </ul>
 <b>Мои проекты</b> (перейти на сайты можно, кликнув по картинке-превью): 
 <ul>
