@@ -1,4 +1,5 @@
 <meta name='freelancehunt' content='4784a3120edd0e7' />
+<link href="style.css" rel="stylesheet">
 <h1 style="text-align:center;font-weight:bold;">Верстка сайтов/Frontend разработка</h1>
 <ul style="list-style:none;display:flex;max-width:500px;padding:0;margin:0 auto;margin-bottom:20px;justify-content:space-between;flex-wrap:wrap;font-weight:bold;">
   <li style="padding:10px; border:1px solid green;">HTML5</li>
