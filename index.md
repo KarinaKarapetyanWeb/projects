@@ -7,8 +7,8 @@
 </ul>
 <p style="text-align:center;"><span style="font-weight:bold;">Мои проекты</span><i>(перейти на сайты можно, кликнув по картинке-превью):</i></p>
 <ul style="list-style:none;display:flex;max-width:940px;margin:0 auto;margin-bottom:20px;padding:0;justify-content:space-between;flex-wrap:wrap;">
-  <li style="width:350px;"><p><b>Интернет-магазин мороженого "Gllacy-shop"</b></p><a href="https://karinakarapetyanweb.github.io/projects/gllacy-shop/"><img src="img/gllacy-index.jpg" alt="Превью сайта"></a></li>
-  <li style="width:350px;"><p style="margin-bottom:25px;"><b>Сайт барбершопа "Бородинский"</b></p><a href="https://karinakarapetyanweb.github.io/projects/barbershop/"><img src="img/barbershop-index.jpg" alt="Превью сайта"></a></li>
-  <li style="width:350px;"><p><b>Интернет-магазин джема и варенья "Cookery-box"</b></p><a href="https://karinakarapetyanweb.github.io/projects/cookery-project/"><img src="img/cookery-index.jpg" alt="Превью сайта"></a></li>
-  <li style="width:350px;"><p><b>Новая адаптивная версия сайта барбершоп "Бородинский"</b></p><a href="https://karinakarapetyanweb.github.io/projects/barbershop-new-version/"><img src="img/barbershop-new-index.jpg" alt="Превью сайта"></a></li>
+  <li style="width:350px;min-height:265px; display:flex;flex-direction:column;justify-content:space-between; margin-bottom:30px;"><p><b>Интернет-магазин мороженого "Gllacy-shop"</b></p><a href="https://karinakarapetyanweb.github.io/projects/gllacy-shop/"><img src="img/gllacy-index.jpg" alt="Превью сайта"></a></li>
+  <li style="width:350px;min-height:265px; display:flex;flex-direction:column;justify-content:space-between; margin-bottom:30px;"><p><b>Сайт барбершопа "Бородинский"</b></p><a href="https://karinakarapetyanweb.github.io/projects/barbershop/"><img src="img/barbershop-index.jpg" alt="Превью сайта"></a></li>
+  <li style="width:350px;min-height:265px; display:flex;flex-direction:column;justify-content:space-between; margin-bottom:30px;"><p><b>Интернет-магазин джема и варенья "Cookery-box"</b></p><a href="https://karinakarapetyanweb.github.io/projects/cookery-project/"><img src="img/cookery-index.jpg" alt="Превью сайта"></a></li>
+  <li style="width:350px;min-height:265px; display:flex;flex-direction:column;justify-content:space-between; margin-bottom:30px;"><p><b>Новая адаптивная версия сайта барбершоп "Бородинский"</b></p><a href="https://karinakarapetyanweb.github.io/projects/barbershop-new-version/"><img src="img/barbershop-new-index.jpg" alt="Превью сайта"></a></li>
 </ul>
