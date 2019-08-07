@@ -183,10 +183,14 @@ main > section {
     content: "";
     display: block;
     left: 50%;
-    transform: translateX(-50%);
     bottom: 0;
     position: absolute;
     width: 115px;
+	-webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .sec-title.white h2:after {
