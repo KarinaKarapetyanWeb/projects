@@ -17,14 +17,6 @@ if (window.innerWidth >= 1200) {
 // nextBtn.addEventListener ('click', sliderRight);
 // prevBtn.addEventListener ('click', sliderLeft);
 
-nextBtn.addEventLis('click', getActionOnClick(sliderRight))
-prevBtn.addEventLis('click', getActionOnClick(sliderLeft))
-
-const getActionOnClick = (sliderMove) => () => {
-clearTimeout(timer)
-sliderRight();
-}
-
 function autoSlider() {
 	timer = setTimeout(sliderMove, 2000);
 }
@@ -76,4 +68,12 @@ function sliderLeft() {
 		prevBtn.classList.add('disabled');
 		slider.style.transform = "none";
 	}
+}
+
+nextBtn.addEventLis('click', getActionOnClick(sliderRight))
+prevBtn.addEventLis('click', getActionOnClick(sliderLeft))
+
+const getActionOnClick = (sliderMove) => () => {
+clearTimeout(timer)
+sliderRight();
 }
