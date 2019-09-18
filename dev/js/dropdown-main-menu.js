@@ -1,5 +1,5 @@
 var mainItem = document.querySelectorAll('.main-list__item');
-
+if (window.innerWidth >= 1200) {
 	for (var i = 0 ; i < mainItem.length; i++) {
 		if (mainItem[i].children.length > 1) {
 			mainItem[i].addEventListener('mouseenter', function (evt) {
@@ -10,3 +10,4 @@ var mainItem = document.querySelectorAll('.main-list__item');
 			});
 		}
 	}
+} 
