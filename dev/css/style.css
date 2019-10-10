@@ -403,7 +403,7 @@ html {
 
 @font-face {
   font-family: ALSRubl;
-  src: url(fonts/rouble.ttf);
+  src: url(../fonts/rouble.ttf);
 }
 
 body {
