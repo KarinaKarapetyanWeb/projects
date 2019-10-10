@@ -401,6 +401,11 @@ html {
   src: url("../fonts/UbuntuCondensed-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: ALSRubl;
+  src: url(fonts/rouble.ttf);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   min-width: 320px;
@@ -1841,7 +1846,12 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
 }
 
-.catalog-item__price {
+.catalog-item__price span {
+  font-family: ALSRubl;
+}
+
+
+/*.catalog-item__price {
   padding-right: 13px;
   position: relative;
 }
@@ -1852,7 +1862,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   right: 0;
   top: 0;
-}
+}*/
 
 .catalog-item__btn {
   text-align: center;
