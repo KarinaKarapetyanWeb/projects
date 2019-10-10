@@ -1841,6 +1841,19 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
 }
 
+.catalog-item__price {
+  padding-right: 13px;
+  position: relative;
+}
+
+.catalog-item__price::after {
+  content: "\20BD";
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .catalog-item__btn {
   text-align: center;
   position: relative;
