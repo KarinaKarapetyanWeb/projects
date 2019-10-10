@@ -374,7 +374,7 @@ html {
   font-family: "Open Sans";
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/OpenSans-SemiBoldExt.woff2") format("woff2"), url("../fonts/OpenSans-SemiBoldExt.woff") format("woff");
 }
 
 @font-face {
