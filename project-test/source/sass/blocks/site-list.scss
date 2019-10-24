@@ -1,0 +1,18 @@
+.site-list {
+	font-family: Helvetica;
+	color: #FFFFFF;
+	list-style: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 33px;
+}
+
+.site-list a {
+	color: #FFFFFF;
+	display: block;
+	letter-spacing: -0.17px;
+}
+
