@@ -2057,33 +2057,18 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.17px;
 }
 
-.language__list,
-.language__list--drop {
-  list-style: none;
-}
-
-.language__list {
+.language__list--wrapper {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 20px;
   margin-top: 35px;
 }
 
-.language__item {
-  display: block;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/english.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.language__item--active {
-  display: block;
-  position: relative;
-}
-
-.language__item--active::after {
+.language__list--wrapper::after {
   content: "";
   position: absolute;
-  left: 22px;
+  right: 0px;
   top: 12px;
   display: block;
   width: 0;
@@ -2093,15 +2078,44 @@ input[type="radio"].visually-hidden {
   border-bottom: 0;
 }
 
-.language__list--drop {
-  position: absolute;
-  top: 30px;
-  left: 0px;
+.language__list {
+  list-style: none;
+}
+
+.language__item {
+  margin-bottom: 5px;
+  width: 19px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.language__item:first-of-type {
+  background-image: url("../img/english.png");
+}
+
+.language__item:nth-of-type(2) {
+  background-image: url("../img/russian.png");
+}
+
+.language__list--closed .language__item {
   display: none;
 }
 
-.language__item--drop {
-  margin-bottom: 5px;
+.language__list--closed .language__item--active {
+  display: block;
+}
+
+.language__list--opened.language__list {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.language__list--opened .language__item {
+  display: block;
 }
 
 .about {
@@ -2403,17 +2417,20 @@ input[type="radio"].visually-hidden {
 .form__input-wrapper {
   padding: 1px;
   height: 40px;
-  background-image: none;
   background-color: #8d9aa9;
   border-radius: 7px;
   margin-bottom: 25px;
 }
 
-.form__input-wrapper--name {
-  width: 260px;
+.form__input-wrapper:hover,
+.form__input-wrapper:active {
   background-color: transparent;
   background-image: -o-linear-gradient(334deg, #c43f96 0%, #4A51E2 100%);
   background-image: linear-gradient(116deg, #c43f96 0%, #4A51E2 100%);
+}
+
+.form__input-wrapper--name {
+  width: 260px;
 }
 
 .form__input-wrapper--tel {
@@ -2452,9 +2469,15 @@ input[type="radio"].visually-hidden {
   width: 300px;
   height: 108px;
   margin-bottom: 20px;
-  background-image: none;
   background-color: #8d9aa9;
   border-radius: 7px;
+}
+
+.form-textarea__wrapper:hover,
+.form-textarea__wrapper:active {
+  background-color: transparent;
+  background-image: -o-linear-gradient(334deg, #c43f96 0%, #4A51E2 100%);
+  background-image: linear-gradient(116deg, #c43f96 0%, #4A51E2 100%);
 }
 
 .form__textarea {
