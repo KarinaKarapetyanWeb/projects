@@ -2586,3 +2586,10 @@ select {
   background-image: -o-linear-gradient(334deg, #c43f96 0%, #4A51E2 100%);
   background-image: linear-gradient(116deg, #c43f96 0%, #4A51E2 100%);
 }
+
+.footer-copyright a {
+  font-size: 10px;
+  border-radius: 0px;
+  background-image: none;
+  color: #3F546C;
+}
