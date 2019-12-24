@@ -663,11 +663,11 @@ figcaption.mask h3 {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     figcaption.mask {
         bottom: 0px;
     }
-}
+}*/
 
 ul.external {
     list-style: outside none none;
