@@ -32,14 +32,20 @@ for (var i = 0 ; i < floor.length; i++) {
             modal.classList.add("modal-show");
             modalTitle.innerHTML = evt.target.dataset.floor + ' этаж';
             planImg.src = evt.target.dataset.plan;
+            if (svg1.classList.contains('svg-hide')) {
+            	svg2.classList.add('svg-hide');
+        		svg1.classList.remove('svg-hide');
+            }
     }); 
 }
 
 // Открытие другого svg-плана при клике на 2 этаж 
 
 floor[1].addEventListener('click', function (evt) {
+	if (svg2.classList.contains('svg-hide')) {
 		svg1.classList.add('svg-hide');
         svg2.classList.remove('svg-hide');
+	}
 });
 
 // Подсветка квартир и вывод квадратуры
