@@ -973,7 +973,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .index__background {
-    background-image: url("../img/header-girl@2x.jpg");
+    background-image: url("../img/header-girl@2x.png");
+    background-size: 598px 476px;
   }
 }
 
@@ -1191,11 +1192,11 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.promo__time {
+.timer-element {
   width: 75px;
   height: 75px;
   font-size: 12px;
-  padding-top: 20px;
+  padding-top: 15px;
   text-align: center;
   background-image: url("../img/circle.png");
   background-size: cover;
@@ -1210,6 +1211,7 @@ input[type="radio"].visually-hidden {
 .promo__form {
   width: 245px;
   margin: 0 auto;
+  margin-top: 65px;
 }
 
 .promo__form p {
@@ -1317,19 +1319,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.social__item {
-  width: 45px;
-  height: 18px;
-  background-color: #ffffff;
-  margin-right: 5px;
-}
-
-.social__item:last-of-type {
-  width: 18px;
-  height: 18px;
-  margin-right: 0px;
-}
-
 .social__title {
   font-family: "EskizOneBoldC", sans-serif;
   font-size: 20px;
@@ -1369,6 +1358,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     bottom: -50px;
     left: 0;
+    z-index: 2;
   }
 }
 
@@ -2453,10 +2443,6 @@ input[type="radio"].visually-hidden {
   padding: 20px;
 }
 
-.slider__img {
-  margin-bottom: 20px;
-}
-
 .slider__author {
   position: relative;
   font-weight: bold;
@@ -2494,8 +2480,9 @@ input[type="radio"].visually-hidden {
   padding: 10px;
 }
 
-.slider__img {
+.slider__video {
   margin-bottom: 20px;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -2507,7 +2494,7 @@ input[type="radio"].visually-hidden {
   .slider__content {
     margin-left: 20px;
   }
-  .slider__img {
+  .slider__video {
     margin-bottom: 0px;
   }
   .slider__btn {
@@ -2680,7 +2667,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .garanties__background {
-    background-image: url("../img/garanties-girl@2x.jpg");
+    background-image: url("../img/garanties-girl@2x.png");
+    background-size: 462px 391px;
   }
 }
 
@@ -2827,7 +2815,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .footer__background {
-    background-image: url("../img/order-girl@2x.jpg");
+    background-image: url("../img/order-girl@2x.png");
+    background-size: 598px 442px;
   }
 }
 
@@ -2919,21 +2908,6 @@ input[type="radio"].visually-hidden {
   .aside__item a {
     color: #ffffff;
     text-decoration: none;
-  }
-  .aside__item:nth-of-type(2) .aside__button {
-    background-color: #ff7c00;
-    background-image: url("../img/orange-btn.png");
-  }
-  .aside__item:nth-of-type(2) .aside__button::before {
-    width: 20px;
-    height: 28px;
-    background-image: url("../img/btn-3.png");
-  }
-  .aside__item:nth-of-type(2) .aside__button:hover {
-    background-image: url("../img/orange-btn-hover.png");
-  }
-  .aside__item:nth-of-type(2) .aside__button:focus {
-    background-image: url("../img/orange-btn-active.png");
   }
   .aside__item:last-of-type .aside__button {
     background-color: #db318d;

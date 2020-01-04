@@ -11,14 +11,14 @@ $mail = new PHPMailer;
 
 $mail->CharSet = 'utf-8';
 $mail->isSMTP(); 
-$mail->Host = 'smtp.mail.ru';  
+$mail->Host = 'smtp.yandex.ua';  
 $mail->SMTPAuth = true;                      
-$mail->Username = 'karina_karapetyan'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-$mail->Password = 'Maryyyme'; // Ваш пароль
+$mail->Username = 'Kvim.group'; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+$mail->Password = 'Qwer1212'; // Ваш пароль
 $mail->SMTPSecure = 'ssl';                            
 $mail->Port = 465;
-$mail->setFrom('karina_karapetyan@mail.ru'); // Ваш Email
-$mail->addAddress('karina_karapetyan@mail.ru'); // Email получателя
+$mail->setFrom('Kvim.group@yandex.ua'); // Ваш Email
+$mail->addAddress('Kvim.group@yandex.ua'); // Email получателя
 
 // Прикрепление файлов
   for ($ct = 0; $ct < count($_FILES['userfile']['tmp_name']); $ct++) {
