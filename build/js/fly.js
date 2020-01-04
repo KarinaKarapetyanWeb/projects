@@ -1,0 +1,1 @@
+var flyBtn=document.querySelector(".fly__btn");flyBtn.addEventListener("click",function(){flyBtn.classList.add("fly__btn--active")});
