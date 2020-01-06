@@ -5,6 +5,7 @@ require 'class.smtp.php';
 
 $name = $_POST['client-name'];
 $number = $_POST['client-tel'];
+$orderNumber = microtime(true)*100;
 
 // Настройки
 $mail = new PHPMailer;
@@ -33,8 +34,8 @@ $mail->addAddress('Kvim.group@yandex.ua'); // Email получателя
                                  
 // Письмо
 $mail->isHTML(true); 
-$mail->Subject = "Заявка с сайта 'Летающая фея' "; // Заголовок письма
-$mail->Body    = "Имя клиента: $name . Телефон клиента: $number"; // Текст письма
+$mail->Subject = "Заявка с сайта 'Летающая фея' №$orderNumber"; // Заголовок письма
+$mail->Body    = "Имя клиента: $name  <br> Телефон клиента: $number  <br>  Номер заказа: $orderNumber"; // Текст письма
 
 // Результат
 if(!$mail->send()) {
