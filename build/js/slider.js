@@ -1,1 +1,0 @@
-var slideIndex=1;function currentSlide(e){showSlides(slideIndex=e)}function plusSlides(e){showSlides(slideIndex+=e)}function showSlides(e){var l,s=document.getElementsByClassName("slider__item");for(e>s.length&&(slideIndex=1),e<1&&(slideIndex=s.length),l=0;l<s.length;l++)s[l].style.display="none";s[slideIndex-1].style.display="flex"}showSlides(slideIndex);
