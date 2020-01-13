@@ -1,0 +1,3 @@
+User agent:*
+Disallow:/cookery-project/
+Disallow:/gosauc/
