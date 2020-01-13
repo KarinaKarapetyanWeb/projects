@@ -179,7 +179,7 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-        <form class="login-form" action="" method="post">
+        <form class="login-form" action="send.php" id="my-form">
             <p>
                 <label class="visually-hidden" for="user-login">Логин</label>
                 <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
@@ -196,7 +196,8 @@
                 </label>
                 <a class="restore" href="#">Я забыл пароль!</a>
             </p>
-            <button class="button" type="submit">Войти</button>
+            <div id="my-result"></div>
+            <button class="button" type="submit" id="my-button">Войти</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
@@ -210,31 +211,55 @@
     </section>
 
     <script>
-          $(function(){
-            'use strict';
-          $('.form-data').on('submit', function(e){
-              e.preventDefault();
-              var fd = new FormData( this );
-              $.ajax({
-                url: 'send.php',
-                type: 'POST',
-                contentType: false, 
-                processData: false, 
-                data: fd,
-                success: function(msg){
-          if(msg == 'ok') {
-            var formData = document.querySelectorAll('.login-form');
-
-            alert('Отправлено');
-            formData.reset();
-
-          } else {
-            alert('Ошибка');
-          }
-                }
-              });
-            });
-          });
+        function AJAXform( formID, buttonID, resultID, formMethod = 'post' ){
+        var selectForm = document.getElementById(formID); // Select the form by ID.
+        var selectButton = document.getElementById(buttonID); // Select the button by ID.
+        var selectResult = document.getElementById(resultID); // Select result element by ID.
+        var formAction = document.getElementById(formID).getAttribute('action'); // Get the form action.
+        var formInputs = document.getElementById(formID).querySelectorAll("input"); // Get the form inputs.
+        var popup = document.querySelector(".modal-login"); // для добавления класса об ошибке
+        var login = popup.querySelector("[name=login]"); // для добавления класса об ошибке
+        var password = popup.querySelector("[name=password]"); // для добавления класса об ошибке
+     
+        function XMLhttp(){
+            var httpRequest = new XMLHttpRequest();
+            var formData = new FormData();
+     
+            for( var i=0; i < formInputs.length; i++ ){
+                formData.append(formInputs[i].name, formInputs[i].value); // Add all inputs inside formData().
+            }
+     
+            httpRequest.onreadystatechange = function(){
+                if ( this.readyState == 4 && this.status == 200 ) {
+                    selectResult.innerHTML = "Данные отправлены!"; // Display the result inside result element.
+                    selectForm.reset(); // Очистка полей ввода
+                } 
+            };
+     
+            httpRequest.open(formMethod, formAction);
+            httpRequest.send(formData);
+        }
+     
+        selectButton.onclick = function(evt){ // If clicked on the button.
+            if (!login.value || !password.value) {
+                evt.preventDefault();
+                selectResult.innerHTML = "Заполните необходимые поля!";
+                popup.classList.remove("modal-error");
+                popup.offsetWidth = popup.offsetWidth;
+                popup.classList.add("modal-error");
+            } else {
+                XMLhttp(); // если проверка не требуется, оставить только эту строку
+            }
+        }
+     
+        selectForm.onsubmit = function(){ // Prevent page refresh
+            return false;
+        }
+        }
+        
+        window.onload = function (){
+            AJAXform( 'my-form', 'my-button', 'my-result', 'post' );
+        };
     </script>
     <script src="js/popup-script.js"></script>
     <script src="js/map-script.js"></script>
