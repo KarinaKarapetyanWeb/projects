@@ -1232,22 +1232,6 @@ input[type="radio"].visually-hidden {
 
 .advantages {
   position: relative;
-  /*&::after {
-      content:"";
-
-      display: block;
-
-      border-top: 40px solid #242424;
-      border-left: 50vw solid transparent;
-      border-right: 50vw solid transparent;
-      width: 0;
-      height: 0;
-      bottom: -50px;
-      position: absolute;
-      overflow: hidden;
-      left:0;right:0;
-      margin:auto;
-    }*/
 }
 
 .advantages::after {
