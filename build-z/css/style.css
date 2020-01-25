@@ -391,6 +391,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.page-header {
+  margin-bottom: 120px;
+}
+
 .page-header__wrapper {
   width: 300px;
   min-height: 100vh;
@@ -532,117 +536,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .site-list {
     font-size: 18px;
-  }
-}
-
-.page-main--inner {
-  color: #000000;
-  background-color: #f8f5f2;
-  position: relative;
-}
-
-.page-main--form {
-  padding-bottom: 40px;
-}
-
-.page-main--form::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -35px;
-  z-index: 10;
-  width: 100%;
-  height: 35px;
-  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, #f8f5f2)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, #f8f5f2));
-  background-image: -webkit-linear-gradient(bottom left, transparent 50%, #f8f5f2 50%), -webkit-linear-gradient(bottom right, transparent 50%, #f8f5f2 50%);
-  background-image: linear-gradient(to top right, transparent 50%, #f8f5f2 50%), linear-gradient(to top left, transparent 50%, #f8f5f2 50%);
-  background-repeat: no-repeat;
-  background-position: 0 0, 100% 0;
-  background-size: 50.1% 100%;
-}
-
-@media (min-width: 768px) {
-  .page-main--form {
-    padding-bottom: 80px;
-  }
-  .page-main--form::after {
-    display: none;
-  }
-  .page-main--inner::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -40px;
-    z-index: 10;
-    width: 100%;
-    height: 40px;
-    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, #f8f5f2)), -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #f8f5f2));
-    background-image: -webkit-linear-gradient(top right, transparent 50%, #f8f5f2 50%), -webkit-linear-gradient(top left, transparent 50%, #f8f5f2 50%);
-    background-image: linear-gradient(to bottom left, transparent 50%, #f8f5f2 50%), linear-gradient(to bottom right, transparent 50%, #f8f5f2 50%);
-    background-repeat: no-repeat;
-    background-position: 0 0, 100% 0;
-    background-size: 50.1% 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-main--form {
-    padding-bottom: 90px;
-  }
-  .page-main--inner::before {
-    top: -65px;
-    height: 65px;
-  }
-}
-
-.page-title {
-  margin: 0 auto;
-  padding: 30px 0;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.page-title a {
-  display: none;
-}
-
-.page-title__title {
-  margin: 0;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .page-title {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    padding-left: 64px;
-    padding-right: 64px;
-    padding-top: 58px;
-    padding-bottom: 40px;
-  }
-  .page-title a {
-    align-self: center;
-    display: block;
-    width: 100px;
-    margin-top: -5px;
-  }
-  .page-title__title {
-    font-size: 40px;
-    line-height: 40px;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-title {
-    width: 960px;
-    padding-bottom: 80px;
-    padding-top: 60px;
   }
 }
 
@@ -1061,7 +954,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .price-list__table tr {
