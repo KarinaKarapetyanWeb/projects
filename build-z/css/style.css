@@ -391,12 +391,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.page-header {
-  margin-bottom: 80px;
-}
-
 .page-header__wrapper {
   width: 300px;
+  min-height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
   display: flex;
@@ -433,6 +430,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   bottom: 30px;
   right: 30px;
+  text-align: center;
 }
 
 .page-header__button::before {
@@ -496,9 +494,6 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 1200px) {
-  .page-header {
-    margin-bottom: 100px;
-  }
   .page-header__wrapper {
     width: 960px;
   }
@@ -526,11 +521,18 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   margin: 0 auto;
   list-style: none;
+  font-size: 16px;
 }
 
 .site-list a {
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    font-size: 18px;
+  }
 }
 
 .page-main--inner {
