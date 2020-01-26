@@ -391,12 +391,13 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/*.page-header {
+.page-header {
   margin-bottom: 120px;
-}*/
+}
+
 .page-header__wrapper {
   width: 300px;
-  height: 100vh;
+  /*height: 100vh;*/
   margin: 0 auto;
   display: -webkit-box;
   display: flex;
@@ -524,18 +525,12 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   margin: 0 auto;
   list-style: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .site-list a {
   color: #000000;
   text-decoration: none;
-}
-
-@media (min-width: 768px) {
-  .site-list {
-    font-size: 18px;
-  }
 }
 
 .button {
