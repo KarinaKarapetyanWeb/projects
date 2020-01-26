@@ -391,13 +391,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.page-header {
+/*.page-header {
   margin-bottom: 120px;
-}
-
+}*/
 .page-header__wrapper {
   width: 300px;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
   display: flex;
