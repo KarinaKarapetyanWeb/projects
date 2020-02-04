@@ -1424,10 +1424,6 @@ input[type="radio"].visually-hidden {
   left: 10px;
 }
 
-.slider__btn--prev:hover::before {
-  border-right-color: #a7a7a7;
-}
-
 .slider__btn--next {
   right: 0;
 }
@@ -1436,10 +1432,6 @@ input[type="radio"].visually-hidden {
   border-left-color: #ffffff;
   border-right: 0;
   right: 10px;
-}
-
-.slider__btn--next:hover::before {
-  border-left-color: #a7a7a7;
 }
 
 @media (min-width: 1200px) {
