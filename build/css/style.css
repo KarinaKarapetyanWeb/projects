@@ -983,7 +983,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-list {
-  padding-top: 75px;
+  padding-top: 15px;
   padding-bottom: 70px;
 }
 
@@ -1050,7 +1050,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .price-list {
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   .price-list__wrapper {
@@ -1085,9 +1085,6 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 1200px) {
-  .price-list {
-    padding-top: 50px;
-  }
   .price-list__table {
     margin-bottom: 0px;
   }
@@ -1176,7 +1173,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about {
-  padding-top: 75px;
+  padding-top: 15px;
   padding-bottom: 60px;
 }
 
