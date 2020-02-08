@@ -638,6 +638,10 @@ h1.navbar-brand {
     width: 32%;
 }
 
+.portfolio-item--border {
+    border:1px solid #000000;
+}
+
 figcaption.mask {
     background-color: rgba(54, 55, 50, 0.79);
     bottom: -126px;
