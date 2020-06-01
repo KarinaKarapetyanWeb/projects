@@ -1,0 +1,1 @@
+var modal=document.querySelector(".modal"),modalOpen=document.querySelector(".modal-open"),modalBtn=document.querySelector(".modal__btn");modalOpen.addEventListener("click",function(e){e.preventDefault(),modal.classList.add("modal--show")}),modalBtn.addEventListener("click",function(e){modal.classList.remove("modal--show")});
