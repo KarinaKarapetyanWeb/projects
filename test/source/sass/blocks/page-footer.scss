@@ -1,0 +1,28 @@
+.page-footer {
+	display: none;
+}
+
+@media (min-width: $desktop-width) {
+	.page-footer {
+		display: block;
+		padding: 35px 0;
+		background-color: #F4F4F4;;
+	}
+
+	.page-footer__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.page-footer__copyright {
+		font-size: 14px;
+		line-height: 24px;
+		color: #4C4C4C;
+		margin:0;
+		margin-right: 174px;
+	}
+
+	.page-footer__menu-list {
+		margin-right: 353px;
+	}
+}
