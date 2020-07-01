@@ -1,0 +1,130 @@
+.contacts {
+	width: 13.54vw;
+	font-weight: 500;
+} 
+
+.contacts__p {
+	position: relative;
+	margin: 0;
+    margin-bottom: 0.2vw;
+	padding-left: 2.5vw;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0.2vw;
+		left: 0;
+		display: block;
+		box-shadow: 0px 3px 20px 0px rgba(68, 68, 68, 0.11);
+		width:1.82vw;
+		height:1.82vw;
+		background-color: #ffffff;
+		border-radius: 50%;
+		background-image: url("../img/tel-icon.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.contacts__p span {
+	position: relative;
+	padding-left: 1.04vw;
+	font-size: 0.62vw;
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 5px;
+		height: 5px;
+		left: 0;
+		top: 0.2vw;;
+		border-radius: 50%;
+		background-color: #27b24b;
+  		box-shadow: 0px 0px 7px 0px rgba(79, 160, 55, 0.61);
+	}
+}
+
+.contacts__tel {
+	display: block;
+	text-decoration: none;
+	color: #282828;
+	font-size: 1.04vw;
+	font-weight: 700;
+}
+
+.contacts__time {
+	position: relative;
+	margin: 0;
+	padding-left: 2.5vw;
+	padding-top: 0.52vw;
+	padding-bottom: 0.52vw;
+	font-size: 0.83vw;
+	line-height: 1.094vw;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		box-shadow: 0px 3px 20px 0px rgba(68, 68, 68, 0.11);
+		width:1.82vw;
+		height:1.82vw;
+		background-color: #ffffff;
+		border-radius: 50%;
+		background-image: url("../img/time-icon.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@media (max-width: 992px) {
+	.contacts {
+		order: 5;
+		width: 200px;
+		margin-right: 20px;
+	} 
+
+	.contacts__p {
+	    margin-bottom: 0;
+		padding-left: 35px;
+		&::before {
+			top: 7px;
+			left: 0;
+			width:25px;
+			height:25px;
+		}
+	}
+
+	.contacts__p span {
+		display: block;
+		padding-left: 10px;
+		font-size: 10px;
+		&::before {
+			top: 10px;
+		}
+	}
+
+	.contacts__tel {
+		font-size: 12px;
+	}
+
+	.contacts__time {
+		padding: 0;
+		padding-left: 35px;
+		font-size: 11px;
+		line-height: 20px;
+		&::before {
+			top: -4px;
+			left: 0;
+			width:25px;
+			height:25px;
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.contacts {
+		width: 180px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}

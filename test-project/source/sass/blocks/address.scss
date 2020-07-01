@@ -1,0 +1,89 @@
+.address {
+	position: relative;
+	width: 16.2vw;
+	font-weight: 500;
+	font-size: 0.83vw;
+	font-weight: 500;
+	padding-left: 5.21vw;
+	margin-right: 3.38vw;
+	&::before {
+		content:"";
+		position: absolute;
+		display: block;
+		width: 4.16vw;
+		height: 4.16vw;
+		left: 0;
+		top: 0;
+		border-radius: 50%;
+		background-image: url("../img/map-icon.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		box-shadow: 0px 3px 20px 0px rgba(68, 68, 68, 0.11);
+	}
+
+}
+
+.address__p {
+	margin: 0;
+	margin-bottom: 0.73vw;
+}
+
+.address__map {
+	display: none;
+	border: none;
+	position: absolute;
+	z-index: 2;
+	width:16.67vw;
+	height:13.02vw;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.address__link {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ff6078;
+	border-bottom: 1px dashed #ff6078;
+	&:hover {
+		color: #c64457;
+		border-bottom: none;
+	}
+}
+
+.address-wrapper:hover .address__map {
+	display: block;
+	animation: appear 1s;
+}
+
+@media (max-width: 992px) {
+	.address {
+		order: 4;
+		width: 185px;
+		font-size: 11px;
+		padding-left: 50px;
+		margin-right: 20px;
+		&::before {
+			top: 10px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.address__p {
+		margin-bottom: 0px;
+	}
+
+	.address__map {
+		width:280px;
+		height:200px;
+	}
+}
+
+@media (max-width: 570px) {
+	.address {
+		width: 190px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
