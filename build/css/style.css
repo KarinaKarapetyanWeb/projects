@@ -3386,7 +3386,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   right: 0;
-  top: 7px;
+  bottom: 5px;
   width: 5px;
   height: 5px;
   background-repeat: no-repeat;
