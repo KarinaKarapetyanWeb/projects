@@ -1,1 +1,0 @@
-var mySwiper=new Swiper(".slider",{speed:700,slideClass:"slider__item",wrapperClass:"slider__list",pagination:{el:".slider__pagination",clickable:!0}});if(window.innerWidth<768)var mySwiperCredit=new Swiper(".swiper-container",{speed:700,pagination:{el:".swiper-pagination",clickable:!0}});
