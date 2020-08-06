@@ -1,0 +1,18 @@
+.main-nav {
+	padding: 10px 0;
+}
+
+@media (max-width: $mobile-width-only) {
+
+	.main-nav--closed {
+		display: none;
+	}
+
+	.main-nav--opened {
+		display: block
+	}
+
+	.main-nav--nojs {
+		display: block;
+	}
+}

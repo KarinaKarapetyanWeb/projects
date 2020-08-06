@@ -1,0 +1,84 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Lato";
+  font-style: normal;
+  font-display:swap;
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff2") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Lato";
+  font-style: normal;
+  font-display:swap;
+  src: url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff2") format("woff");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Lato";
+  font-style: normal;
+  font-display:swap;
+  src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff2") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Rubik";
+  font-style: normal;
+  font-display:swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff2") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Rubik";
+  font-style: normal;
+  font-display:swap;
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff2") format("woff");
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  color: #1A212F;
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

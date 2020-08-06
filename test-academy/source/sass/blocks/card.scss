@@ -1,0 +1,143 @@
+.card {
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+
+.card__wrapper {
+	padding: 22px 20px;
+	min-height: 200px;
+	border-left: 1px solid #E1E1E1;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.card__size {
+	margin: 0;
+	margin-top: auto;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+
+.card__link {
+	display: block;
+}
+
+.card__img {
+	display: block;
+	width: 270px;
+	height: 185px;
+}
+
+.card__title {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: "Rubik", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.card--empty .card__title {
+	margin-bottom: 35px;
+}
+
+.card__btn {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	color: #FFFEFD;
+	font-weight: 600;
+	text-align: center;
+	padding: 17px 40px 15px 10px;
+	background-color: #F05B1B;
+	border: none;
+	box-shadow: none;
+	border-radius: 25px;
+	&::after {
+		content: "";
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		display: block;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: #ffffff;
+		background-image: url("../img/cat.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.card__square {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.card__params {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.card__params span {
+	display: block;
+	margin-right: 12px;
+}
+
+.card__params-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card__params-item {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px 15px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&--empty {
+		background-image: url("../img/icon-empty.svg");
+	}
+	&--sofa {
+		background-image: url("../img/icon-sofa.svg");
+	}
+	&--toy {
+		background-image: url("../img/icon-toy.svg");
+	}
+	&--complex {
+		background-image: url("../img/icon-complex.svg");
+	}
+	&--house {
+		background-image: url("../img/icon-house.svg");
+	}
+}
+
+.card__price {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.card__price span {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+@media (min-width: $tablet-width) {
+	.card {
+		margin: 0;
+	}
+}

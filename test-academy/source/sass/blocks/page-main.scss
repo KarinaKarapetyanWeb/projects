@@ -1,0 +1,43 @@
+.page-main {
+	margin-top: 110px;
+}
+
+.page-main__title {
+	font-family: "Rubik";
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.page-main__flex-wrapper {
+	margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+	.page-main__title {
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.page-main {
+	  margin-top: 110px;
+    }
+
+    .page-main__title {
+      font-size: 36px;
+	  line-height: 43px;
+      margin-bottom: 68px;
+      text-align: left;
+    }
+
+    .page-main__flex-wrapper {
+    	display: flex;
+    	margin-bottom: 475px;
+    }
+}

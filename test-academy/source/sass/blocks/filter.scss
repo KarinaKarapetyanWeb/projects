@@ -1,0 +1,188 @@
+.filter {
+	margin-bottom: 20px;
+}
+
+.filter__fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.filter__legend {
+	margin: 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.filter__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter__list-item {
+	margin-bottom: 19px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.filter__submit-btn, 
+.filter__reset-btn {
+	width: 185px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+	border: none;
+	text-shadow: none;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	padding: 12px 10px 12px 10px;
+	border-radius: 25px;
+	border: 2px solid #FAC663;
+}
+
+.filter__submit-btn {
+	display: block;
+	background-color: #FAC663;
+	margin-bottom: 12px;
+}
+
+.filter__reset-btn {
+	display: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter__reset-btn--show {
+	display: block;
+}
+
+.filter__flex-wrap {
+	width: 210px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter__input-wrap {
+	margin: 0;
+	position: relative;
+}
+
+.filter__input-number {
+	width: 100px;
+	height: 24px;
+	border: 1px solid #E1E1E1;
+	padding-left: 26px;
+}
+
+.filter__label-number {
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+}
+
+.filter__label-checkbox {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 30px;
+}
+
+.filter__input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E1E1E1;
+}
+
+.filter__input-checkbox:checked + label::after {
+	content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/mark.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+	.filter {
+		margin-bottom: 40px;
+	} 
+
+	.filter__form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: center;
+	}
+
+	.filter__fieldset {
+		margin-right: 100px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.filter__submit-btn {
+		margin-left: 0;
+		margin-right: 30px;
+		margin-bottom: 0;	
+	}
+
+	.filter__reset-btn {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.filter__flex-wrap {
+		margin: 0;
+	}
+	
+}
+
+@media (min-width: $desktop-width) {
+	.filter {
+		width: 300px;
+		margin-right: 23px;
+		margin-bottom: 0;
+	}
+
+	.filter__form {
+		display: block;
+	}
+
+	.filter__fieldset {
+		margin-right: 0px;
+		margin-bottom: 32px;
+		&:last-of-type {
+			margin-bottom: 40px;
+		}
+	}
+
+	.filter__legend {
+		text-align: left;
+	}
+
+	.filter__submit-btn {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+
+	.filter__reset-btn {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
