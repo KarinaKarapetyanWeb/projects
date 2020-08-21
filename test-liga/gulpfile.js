@@ -68,6 +68,7 @@ function clean () {
 function copy () {
 	return gulp.src([
 		"source/fonts/**/*.{woff,woff2,ttf}",
+		"source/db/*.json",
 		"source/*.html"
 		], {
 		base:"source"

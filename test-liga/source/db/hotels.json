@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Эконом",
+    "square": 0.63,
+    "price": 100,
+    "image": "img/item-1.png",
+    "retinaImage": "img/item-1@2x.png",
+    "sizes": "",
+    "equipment" : {
+     "empty": "empty"
+    }
+  },
+  {
+    "name": "Эконом Плюс",
+    "square": 0.90,
+    "price": 200,
+    "image": "img/item-2.png",
+    "retinaImage": "img/item-2@2x.png",
+    "sizes": "90х100х180",
+    "equipment" : {
+     "sofa": "sofa",
+     "complex": "complex"
+    }
+  },
+  {
+    "name": "Комфорт",
+    "square": 1.13,
+    "price": 250,
+    "image": "img/item-3.png",
+    "retinaImage": "img/item-3@2x.png",
+    "sizes": "100х125х180",
+    "equipment" : {
+     "sofa": "sofa",
+     "complex": "complex",
+     "toy": "toy"
+    }
+  },
+  {
+    "name": "Сьют",
+    "square": 1.56,
+    "price": 350,
+    "image": "img/item-4.png",
+    "retinaImage": "img/item-4@2x.png",
+    "sizes": "125х125х180",
+    "equipment" : {
+      "sofa": "sofa",
+      "complex": "complex",
+      "toy": "toy"
+    }
+  },
+  {
+    "name": "Люкс",
+    "square": 2.56,
+    "price": 500,
+    "image": "img/item-5.png",
+    "retinaImage": "img/item-5@2x.png",
+    "sizes": "160х160х180",
+    "equipment" : {
+        "sofa": "sofa",
+        "complex": "complex",
+        "toy": "toy",
+        "house":"house"
+    }
+  },
+  {
+    "name": "Супер-Люкс",
+    "square": 2.88,
+    "price": 600,
+    "image": "img/item-6.png",
+    "retinaImage": "img/item-6@2x.png",
+    "sizes": "180х160х180",
+    "equipment" : {
+        "sofa": "sofa",
+        "complex": "complex",
+        "toy": "toy",
+        "house":"house"
+    }
+  }
+]

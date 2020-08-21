@@ -1,7 +1,9 @@
+(function () {
+
 var navMain = document.querySelector('.main-nav');
 
 if (navMain) {
-	var navToggle = document.querySelector('.page-header__toggle');
+	const navToggle = document.querySelector('.page-header__toggle');
 	navMain.classList.remove('main-nav--nojs');
 	navToggle.classList.remove('page-header__toggle--nojs');
 
@@ -19,3 +21,5 @@ if (navMain) {
 		}
 	});
 }
+
+})();
