@@ -1023,6 +1023,9 @@ input[type="radio"].visually-hidden {
   .experts__title {
     width: 768px;
   }
+  .experts__item-wrapper {
+    height: calc(100% - 175px);
+  }
 }
 
 @media (min-width: 1280px) {
