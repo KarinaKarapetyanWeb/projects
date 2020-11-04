@@ -796,6 +796,7 @@ input[type="radio"].visually-hidden {
     display: none;
   }
   .subsections__desc a {
+    font-size: 14px;
     line-height: 27px;
   }
   .subsections__link--register {
@@ -1026,6 +1027,10 @@ input[type="radio"].visually-hidden {
   .experts__item-wrapper {
     height: calc(100% - 175px);
   }
+  .experts__buttons {
+    top: 8px;
+    right: 80px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1057,6 +1062,9 @@ input[type="radio"].visually-hidden {
   .experts__item-wrapper {
     height: calc(100% - 195px);
     padding-bottom: 17px;
+  }
+  .experts__buttons {
+    top: 16px;
   }
 }
 
@@ -1339,6 +1347,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .reviews__buttons {
+    top: 13px;
+    right: 80px;
+  }
+}
+
 @media (min-width: 1280px) {
   .reviews {
     padding-top: 72px;
@@ -1368,6 +1383,14 @@ input[type="radio"].visually-hidden {
     padding-right: 32px;
     padding-top: 32px;
     padding-bottom: 30px;
+  }
+  .reviews__title-wrapper {
+    width: 1208px;
+    margin-left: auto;
+  }
+  .reviews__buttons {
+    top: 16px;
+    right: 80px;
   }
 }
 
@@ -1404,12 +1427,52 @@ input[type="radio"].visually-hidden {
   color: #EB922A;
 }
 
-.swiper-pagination {
+.slider-buttons {
   display: none;
 }
 
-@media (min-width: 1280px) {
-  .swiper-pagination {
+@media (min-width: 768px) {
+  .slider-buttons {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    width: 31px;
+    height: 12px;
+  }
+  .slider-buttons__item {
+    display: inline-block;
+    text-shadow: none;
+    padding: 3px;
+    background-color: transparent;
+    width: 10px;
+    height: 13px;
+    cursor: pointer;
+    border: none;
+  }
+  .slider-buttons__item::before {
+    content: "";
     display: block;
+    width: 9px;
+    height: 9px;
+    border: solid #000000;
+    top: 0;
+    border-width: 0 3px 3px 0;
+  }
+  .slider-buttons__item--next::before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    right: 0;
+  }
+  .slider-buttons__item--prev::before {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+    left: 0;
+  }
+  .swiper-button-disabled {
+    opacity: 0.5;
   }
 }

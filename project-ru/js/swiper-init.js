@@ -61,8 +61,9 @@
         speed: 700,
         spaceBetween: 20,
         slidesPerView: 3.4,
-        pagination: {
-          el: '.swiper-pagination',
+        navigation: {
+          nextEl: '.slider-buttons__item--next',
+          prevEl: '.slider-buttons__item--prev',
           clickable: true
         },
       });
@@ -71,8 +72,9 @@
         speed: 700,
         spaceBetween: 20,
         slidesPerView: 3.4,
-        pagination: {
-          el: '.swiper-pagination',
+        navigation: {
+          nextEl: '.slider-buttons__item--next',
+          prevEl: '.slider-buttons__item--prev',
           clickable: true
         },
       });
