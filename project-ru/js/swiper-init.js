@@ -20,14 +20,6 @@
 
   const updateSLiders = function (width) {
     if (width < 768) {
-      const swiperLinks = new Swiper('.subsection__swiper', {
-        speed: 700,
-        spaceBetween: 16,
-        slidesPerView: 1.15,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
 
       const swiperExpert = new Swiper('.experts__swiper', {
         speed: 700,
@@ -47,12 +39,28 @@
         speed: 700,
         spaceBetween: 16,
         slidesPerView: 2.2,
+        navigation: {
+          nextEl: '.slider-buttons__item--next',
+          prevEl: '.slider-buttons__item--prev',
+          clickable: true
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        }
       });
 
       const swiperReviewTablet = new Swiper('.reviews__swiper', {
         speed: 700,
         spaceBetween: 16,
         slidesPerView: 2.2,
+        navigation: {
+          nextEl: '.slider-buttons__item--next',
+          prevEl: '.slider-buttons__item--prev',
+          clickable: true
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        }
       });
     }
 
@@ -60,23 +68,29 @@
       const swiperExpertDesktop = new Swiper('.experts__swiper', {
         speed: 700,
         spaceBetween: 20,
-        slidesPerView: 3.4,
+        slidesPerView: 3.2,
         navigation: {
           nextEl: '.slider-buttons__item--next',
           prevEl: '.slider-buttons__item--prev',
           clickable: true
         },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        }
       });
 
       const swiperReviewDesktop = new Swiper('.reviews__swiper', {
         speed: 700,
         spaceBetween: 20,
-        slidesPerView: 3.4,
+        slidesPerView: 3.2,
         navigation: {
           nextEl: '.slider-buttons__item--next',
           prevEl: '.slider-buttons__item--prev',
           clickable: true
         },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        }
       });
     }
   }
