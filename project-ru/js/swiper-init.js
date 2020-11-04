@@ -46,6 +46,7 @@
         },
         scrollbar: {
           el: '.swiper-scrollbar',
+          draggable: true,
         }
       });
 
@@ -60,6 +61,7 @@
         },
         scrollbar: {
           el: '.swiper-scrollbar',
+          draggable: true,
         }
       });
     }
@@ -76,6 +78,7 @@
         },
         scrollbar: {
           el: '.swiper-scrollbar',
+          draggable: true,
         }
       });
 
@@ -90,6 +93,7 @@
         },
         scrollbar: {
           el: '.swiper-scrollbar',
+          draggable: true,
         }
       });
     }
