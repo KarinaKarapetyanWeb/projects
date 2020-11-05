@@ -114,6 +114,10 @@
   speed: 700,
   spaceBetween: 16,
   slidesPerView: 1.15,
+  mousewheel: { 
+    forceToAxis: true,
+    eventsTarget: '.reviews__swiper'
+  },
   navigation: {
     nextEl: '.slider-buttons__item--next',
     prevEl: '.slider-buttons__item--prev',
@@ -137,6 +141,10 @@ const swiperExpert = new Swiper('.experts__swiper', {
   speed: 700,
   spaceBetween: 16,
   slidesPerView: 1.15,
+  mousewheel: { 
+    forceToAxis: true,
+    eventsTarget: '.experts__swiper'
+  },
   navigation: {
     nextEl: '.slider-buttons__item--next',
     prevEl: '.slider-buttons__item--prev',
