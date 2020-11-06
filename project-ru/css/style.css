@@ -515,17 +515,20 @@ input[type="radio"].visually-hidden {
 .button:hover {
   background-color: #E51818;
   color: #ffffff;
+  border: 1px solid #E51818;
 }
 
 .button:focus {
   background-color: #E51818;
   color: #ffffff;
+  border: 1px solid #E51818;
 }
 
 .button--red {
   color: #ffffff;
   background-color: #F53838;
   border: none;
+  border: 1px solid #F53838;
   box-shadow: 0px 0px 30px 5px rgba(245, 56, 56, 0.25);
 }
 
