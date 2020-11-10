@@ -778,9 +778,6 @@ input[type="radio"].visually-hidden {
   .page-main__demo--1 {
     margin-bottom: 0px;
   }
-  .page-main__demo--2.demo {
-    padding-bottom: 95px;
-  }
 }
 
 .page-footer {
@@ -2651,7 +2648,7 @@ input[type="radio"].visually-hidden {
 
 .faq {
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   background-color: #F1F0FA;
 }
 
@@ -2690,7 +2687,6 @@ input[type="radio"].visually-hidden {
 .faq__item-answer {
   display: none;
   margin: 0;
-  /*margin-top: 16px;*/
   line-height: 24px;
   margin-bottom: 16px;
 }
@@ -2747,13 +2743,6 @@ input[type="radio"].visually-hidden {
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  .faq__item-question:focus::before {
-    background-image: url("../img/arrow-white.svg");
-    background-color: #E51818;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
   .faq__item-answer {
     width: 655px;
     font-size: 18px;
@@ -2766,8 +2755,7 @@ input[type="radio"].visually-hidden {
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  .faq__item-question--open:hover::before,
-  .faq__item-question--open:focus::before {
+  .faq__item-question--open:hover::before {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
