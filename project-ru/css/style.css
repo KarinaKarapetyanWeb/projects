@@ -588,7 +588,6 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   position: relative;
   display: block;
-  margin-bottom: 12px;
   margin-left: 42px;
   z-index: 5;
 }
@@ -603,12 +602,6 @@ input[type="radio"].visually-hidden {
 
 .page-header__logo--dark .img-dark {
   display: block;
-}
-
-.page-header__text {
-  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
-  font-weight: 500;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -629,7 +622,10 @@ input[type="radio"].visually-hidden {
     margin-left: 0px;
     margin-right: 20px;
   }
-  .page-header__text {
+  .page-header__logo--dark .img {
+    display: block;
+  }
+  .page-header__logo--dark .img-dark {
     display: none;
   }
 }
@@ -644,13 +640,14 @@ input[type="radio"].visually-hidden {
 
 .main-nav__toggle {
   position: absolute;
-  top: 13px;
+  top: 21px;
   left: 16px;
   z-index: 2;
   display: block;
   width: 32px;
   height: 32px;
   background-color: transparent;
+  outline: none;
   cursor: pointer;
   border: none;
 }
@@ -3188,6 +3185,8 @@ input[type="radio"].visually-hidden {
   height: 44px;
   margin-right: 16px;
   padding: 10px 15px;
+  font-weight: 500;
+  text-align: center;
   outline: none;
   -moz-appearance: textfield;
 }
@@ -3261,5 +3260,7 @@ input[type="radio"].visually-hidden {
     width: 49px;
     height: 49px;
     padding: 10px 20px;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
