@@ -808,6 +808,9 @@ input[type="radio"].visually-hidden {
     margin-top: 173px;
     margin-bottom: 128px;
   }
+  .page-main--modal-check .page-main__modal {
+    margin-bottom: 24px;
+  }
 }
 
 .page-footer {
