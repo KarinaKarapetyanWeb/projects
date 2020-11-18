@@ -645,7 +645,8 @@ h1.navbar-brand {
 
 figcaption.mask {
     background-color: rgba(54, 55, 50, 0.79);
-    bottom: -126px;
+    /*bottom: -126px;*/
+    bottom: -100%;
     color: #fff;
     padding: 25px;
     position: absolute;
@@ -1306,7 +1307,7 @@ textarea.form-control {
     }
 
     figcaption.mask {
-        bottom: -107px;
+        bottom: 0px;
         color: #fff;
         padding: 15px;
     }
@@ -1404,7 +1405,8 @@ textarea.form-control {
     }
 
     figcaption.mask {
-        bottom: -132px;
+        /*bottom: -132px;*/
+        bottom: 0px;
     }
 
 /* testimonial */
@@ -1440,6 +1442,12 @@ textarea.form-control {
 /* footer */
     .footer-content {
         width: 380px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    figcaption.mask {
+        bottom: 0px;
     }
 }
 
