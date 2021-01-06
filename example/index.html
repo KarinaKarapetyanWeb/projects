@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  </head>
+  <body class="page__body page-body">
+    <section class="page-main__example example example--after">
+      <div class="example__wrapper">
+        <div class="example__container">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__result-container">
+            <dl class="example__list result">
+              <div class="result__wrapper result__wrapper--before">
+                <dt class="result__definition result__definition--left">снижение веса</dt>
+                <dd class="result__description result__description--left">5 кг</dd>
+              </div>
+              <div class="result__wrapper result__wrapper--after">
+                <dt class="result__definition result__definition--right">затрачено времени</dt>
+                <dd class="result__description result__description--right">60 дней</dd>
+              </div>
+            </dl>
+            <p class="example__expenses">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
+          </div>
+        </div>
+        <section class="example__photo">
+          <h2 class="visually-hidden">Результат нашего питания</h2>
+          <div class="example__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example__image example__image-it-was" src="img/before-mobile.png" srcset="img/before-mobile@2x.png" width="311" height="232" alt="до нашего питания">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+              <img class="example__image example__image-after example__image--invisible" src="img/after-mobile.png" srcset="img/after-mobile@2x.png" width="251" height="240" alt="после нашего питания">
+            </picture>
+          </div>
+          <div class="example__toggle toggle-controls">
+            <button class="toggle-controls__it-was-after toggle-controls__it-was-after--before" type="button">Было</button>
+            <div class="toggle-controls__scale">
+              <button class="toggle-controls__bar toggle-controls__bar--before" aria-label="Ползунок прокуртки в лево и право для фотографий примера"></button>
+            </div>
+            <button class="toggle-controls__it-was-after toggle-controls__it-was-after--after" type="button">Стало</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
