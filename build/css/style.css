@@ -1395,7 +1395,8 @@ input[type="radio"].visually-hidden {
     transform: scale(1); }
   .reviews__wrapper .swiper-pagination-bullet {
     width: 56px;
-    height: 56px; }
+    height: 56px;
+    outline: none; }
   .reviews__wrapper .swiper-pagination-bullet-active,
   .reviews__wrapper .swiper-pagination-bullet-main {
     width: 175px; }
