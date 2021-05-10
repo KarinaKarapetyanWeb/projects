@@ -1277,11 +1277,7 @@ input[type="radio"].visually-hidden {
       margin-top: 121px;
       padding-bottom: 157px; } }
 
-.reviews__wrapper {
-  max-width: 854px; }
-
 .reviews__slide {
-  max-width: 854px;
   padding: 0 16px; }
   @media (min-width: 768px) {
     .reviews__slide {
@@ -1372,6 +1368,21 @@ input[type="radio"].visually-hidden {
 
 .reviews__wrapper .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
   transform: scale(0.66); }
+
+.reviews__wrapper.swiper-container {
+  width: 320px !important; }
+  @media (min-width: 375px) {
+    .reviews__wrapper.swiper-container {
+      width: 375px !important; } }
+  @media (min-width: 576px) {
+    .reviews__wrapper.swiper-container {
+      width: 576px !important; } }
+  @media (min-width: 768px) {
+    .reviews__wrapper.swiper-container {
+      width: 768px !important; } }
+  @media (min-width: 992px) {
+    .reviews__wrapper.swiper-container {
+      width: 864px !important; } }
 
 @media (min-width: 992px) {
   .reviews__wrapper .swiper-wrapper {
